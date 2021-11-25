@@ -4,5 +4,5 @@ import com.genesis.global.cripto.application.entities.Asset;
 
 public interface AssetPort {
 
-    Asset getById(String id);
+    Asset getBySymbol(String id);
 }

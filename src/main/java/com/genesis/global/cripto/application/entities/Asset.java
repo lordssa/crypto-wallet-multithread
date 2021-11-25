@@ -1,9 +1,11 @@
 package com.genesis.global.cripto.application.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+import java.math.BigDecimal;
+
+@Setter
+@Getter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -16,7 +18,7 @@ public class Asset {
     private String maxSupply;
     private String marketCapUsd;
     private String volumeUsd24Hr;
-    private String priceUsd;
+    private BigDecimal priceUsd;
     private String changePercent24Hr;
     private String vwap24Hr;
 }

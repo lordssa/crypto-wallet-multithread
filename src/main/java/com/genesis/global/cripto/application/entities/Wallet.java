@@ -1,14 +1,16 @@
 package com.genesis.global.cripto.application.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+import java.math.BigDecimal;
+
+@Setter
+@Getter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Wallet {
     private String symbol;
-    private String quamtity;
-    private String price;
+    private BigDecimal quantity;
+    private BigDecimal price;
 }
